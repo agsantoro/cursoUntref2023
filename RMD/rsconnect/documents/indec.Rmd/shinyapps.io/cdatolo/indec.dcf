@@ -1,0 +1,13 @@
+name: indec
+title: indec
+username:
+account: cdatolo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9526354
+bundleId: 7509977
+url: https://cdatolo.shinyapps.io/indec/
+when: 1690654881.65656
+lastSyncTime: 1690654881.65657
+asMultiple: FALSE
+asStatic: FALSE
