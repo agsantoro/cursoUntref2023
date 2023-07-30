@@ -1,6 +1,7 @@
 ---
 title: "Procesamiento de proyecciones de población de Argentina 2010-2040 (INDEC)"
-author: "Adrián Santoro"
+author: 
+ - Adrián Santoro^[adrian.santoro@gmail.com]
 date: "`r Sys.Date()`"
 output: 
   html_document:
