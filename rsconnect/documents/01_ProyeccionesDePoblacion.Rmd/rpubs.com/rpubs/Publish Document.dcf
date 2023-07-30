@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/1067223/6c0821be1b52469e89c4bb42f32ad6c2
+bundleId: https://api.rpubs.com/api/v1/document/1067223/6c0821be1b52469e89c4bb42f32ad6c2
+url: http://rpubs.com/asantoro/1067223
+when: 1690672513.21278
+lastSyncTime: 1690672513.21279
