@@ -88,17 +88,21 @@ knitr::include_graphics("images/Screenshot_1.png")
 
 El diseño de cada hoja (que representa a una jurisdicción) se compone de 5 bloques horizontales de 6 cuadros cada uno y un bloque final (el sexto) de un cuadro.
 Con una secuencia vamos a obtener la columna en la que empieza cada cuadro.
-Identificamos la letra "B" en el vector LETTERS que incluye R. En este caso, la letra "B" es la segunda del vector. Usando esa posición, iremos agregando los múltiplos de 4 hasta completar las 5 columnas.
+Identificamos la letra "B" en el vector LETTERS que incluye R. En este caso, la letra "B" es la segunda del vector. Usando esa posición, iremos agregando los múltiplos de 4 hasta completar las 6 columnas.
 
 ```{r}
-columnas = c(LETTERS[2],LETTERS[2+4],LETTERS[2+4*2],LETTERS[2+4*3],LETTERS[2+4*4],LETTERS[2+4*5]) # columnas donde comienzan los cuadros
+orden_letra_b = 2
+columnas = LETTERS[seq(orden_letra_b,length(LETTERS), by = 4)][1:6]
+
 print(columnas)
 ```
 
 Ahora obtendremos las filas donde empiezan los cuadros. Entre la longitud de los cuadros (21 filas) más los espacios y los totales que no utilizaremos, vemos que cada bloque comienza 28 filas debajo del anterior. Multiplicamos hasta obtener las filas iniciales de cada uno. 
 
 ```{r}
-filas = c(8, 8+28, 8+28*2, 8+28*3, 8+28*4, 8+28*5) # filas donde empiezan los bloques
+fila_primer_bloque = 8
+fila_ultimo_bloque = 148
+filas = seq(fila_primer_bloque,fila_ultimo_bloque, by = 28)
 print(filas)
 ```
 
